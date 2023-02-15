@@ -1,0 +1,15 @@
+br -  produce un salto de línea en el texto-
+h1...h6 -
+hr - representa un cambio de tema entre párrafos -
+p - (párrafo) es el apropiado para distribuir el texto en párrafos.-
+marquee el texto se mueva de izquierda a derecha y de arriba a abajo. -
+img - 
+ul Elemento para listas - 
+ol - permite definir listas o viñetas ordenadas - 
+
+
+- Usar etiquetas dentro de otras -
+- Usar navegacion dentra la misma pagina <a href> -
+- Utilizar links de otras paginas
+- Usar lineas de comentarios-
+- Usar mas de un estilo-

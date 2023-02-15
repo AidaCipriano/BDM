@@ -1,0 +1,144 @@
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/Fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+.titulo-rojo{
+text-align: center;
+font-family:'Inconsolatas';
+color: red;
+}
+
+.titulos{
+  font-family:'Inconsolatas';
+  text-align: center;
+  font-style: unset;
+}
+
+.titulo-azul{
+  font-family:'Inconsolatas';
+  text-align: center;
+  color: #0d6efd;
+}
+
+
+.subtitulo{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkgray;
+}
+
+.subtitulo2{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkgray;
+font-style: oblique;
+font-size: large;
+}
+
+.subtitulo3{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkswgray;
+font-size: medium;
+font-style: oblique;
+}
+
+.texto{
+  text-align:justify;
+  font-family:'Inconsolatas';
+}
+
+.imagen{
+  max-width:  50%;
+  align-items: center;
+}
+
+
+
+li:nth-child(2){
+  
+  color:darkmagenta;
+
+}
+
+li:nth-child(5){
+  
+font-weight: bold;
+
+}
+
+li {
+  line-height: 10px;
+}
+
+
+ul#test li {
+  line-height: 1.5;
+  color: #0d6efd;
+}
+
+ul#test li a {
+  color: #0d6efd;
+}
+
+ul#test li a:active {
+  background: #265301;
+  color: #CDFEAA;
+
+}
+
+ul#test li a:visited {
+  color: #d2e009;
+
+}
+
+ul#test li a:hover {
+  color: #e0099f;
+
+}
+
+.Bloques{
+  display: inline-flex;
+  list-style: none;
+  padding: 5px;
+  border: 1px solid rgb(44, 43, 44);
+  width: 98%;
+
+}
+
+.Bloque{
+  border: 3px solid rgb(33, 33, 34);
+  margin:0 1px ; 
+  width: 300px;
+  background-color: #0d6efd;
+}
+
+.Tabla{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.col1, .col3{
+  background-color: rgb(200, 203, 206);
+}
+
+.Reading{
+  background-color: #07ac6c;
+}
+.Sample{
+  background-color: #60d8aa
+}
+
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+
+  border-spacing: 0;
+}

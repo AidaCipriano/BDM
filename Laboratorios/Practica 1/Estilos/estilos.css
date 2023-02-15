@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/Fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+.title{
+text-align: center;
+font-family:'Inconsolatas';
+}
+
+.titulos{
+  font-family:'Inconsolatas';
+  text-align: center;
+  font-style: unset;
+}
+
+.subtitulo{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkgray;
+}
+
+.subtitulo2{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkgray;
+font-style: oblique;
+font-size: large;
+}
+
+.subtitulo3{
+  text-align: center;
+font-family:'Inconsolatas';
+text-decoration: darkswgray;
+font-size: medium;
+font-style: oblique;
+}
+
+.texto{
+  text-align:justify;
+  font-family:'Inconsolatas';
+}
+
+.imagen{
+  max-width:  50%;
+  align-items: center;
+}
