@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tienda Online</title>
+        <meta name="viewport" content="width=devide-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css\estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="icon" type="image/png" href="img/logo.JPG">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+
+        <link href="css/signin.css" rel="stylesheet">
+    </head>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <h1 class="main-header__title">ECHO</h1>
+
+         
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <br></br>
+              <li><a href="1index.html" class="nav-link px-2 text-white">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li><a href="perfil.html" class="nav-link px-2 text-secondary">Perfil</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li><a href="tienda.html" class="nav-link px-2 text-white">Shop</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li><a href="carrito.html" class="nav-link px-2 text-white"> <i class="fa-solid fa-cart-shopping"></i> &nbsp;&nbsp;Carrito </a></li>
+              
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+                <a type="button" href="pregunta.html" class="btn btn-outline-light me-2"> <i class="fa-solid fa-user"></i> Registrate/Inicio Sesión</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+        <main class="main-registrar  modal position-static d-block">
+        <div class="form-signin w-100 m-auto">
+            <form action="" method="post" id="form" class="form-register" >
+            <div class="inicio-box" >
+            <h2 class="inicio-title">Inicio de sesion</h2>
+            <div class="formulario">
+       
+                <div class="form-floating"> 
+                    <input type="input-user" class="form-control"  placeholder="Ingrese su nombre de usuario" name="username">
+                    <label for="floatingInput">Usuario</label>
+                </div>
+
+                <div class="form-floating"> 
+                    <input type="password" class="form-control"  placeholder="Ingrese su contaseña" name="password"
+                    pattern="^(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[0-9]){1})(?=(?:.*[?¿.,:;-]){1})\S{8,}"
+                    required
+                    minlength="8">
+                    <label for="floatingInput">Contraseña</label>
+
+                </div>
+                <button class="btn-login" type="submit"  value="Enviar">Login</button>
+
+        
+            </div>
+        </form>
+        </div>
+        
+        
+        
+    </main>
+
+    
+    <script src="js/menu.js"></script>
+    <script src="js/iniciosesion.js"></script>
+
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Conocenos</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Metodos de Pago</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Contactanos</h2>
+            <p class="footer__txt">Email:</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">¿Necesitas Ayuda?</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Subscribete</h2>
+            <p class="footer__txt">Registrate para recibir las ultimas ofertas 
+                en tu correo electronico y comprar productos.</p>
+                <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        
+    </footer>
+    <div class="Copyright"><p class="copy">© 2022, Echo</p></div>
+
+</html>
