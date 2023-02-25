@@ -1,0 +1,40 @@
+
+
+.form-signin {
+  max-width: 430px;
+  background-color: transparent;
+}
+
+.form-signin input[type="name"] {
+  margin-bottom: -1px;
+  margin-top: 50px;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+}
+
+.form-signin input[type="user"] {
+  margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+}
+
+.form-signin select[type="sexo"] {
+  margin-bottom: -1px;
+}
+
+.form-signin select[type="rol"] {
+  margin-bottom: 8px;
+}
+
+.form-signin input[type="date"] {
+  margin-bottom: 8px;
+}
+
+.form-signin input[type="file"] {
+  margin-bottom: 10px;
+}
+
