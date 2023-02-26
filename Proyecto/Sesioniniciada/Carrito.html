@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Online</title>
+  <meta name="viewport" content="width=devide-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.JPG">
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/dropdowns.css" rel="stylesheet">
+      
+
+</head>
+  
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <h1 class="main-header__title">ECHO</h1>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <br></br>
+          <li><a href="Home.html" class="nav-link px-2 text-white">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+          <li><a href="Perfil.html" class="nav-link px-2 text-white">Perfil</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+          <li><a href="Tienda.html" class="nav-link px-2 text-white">Shop</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+          <li><a href="Carrito.html" class="nav-link px-2 text-secondary"> <i class="fa-solid fa-cart-shopping"></i> &nbsp;&nbsp;Carrito </a></li>
+    
+        </ul>
+        
+              
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">  
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+        
+        <ul class="nav col-12 col-lg-auto  mb-md-0">
+          <li><a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Usuario </a>
+            <ul class="dropdown-menu dropdown-menu-dark ">
+                
+              <li><a class="dropdown-item" href="MisPedidos.html">Mis Pedidos</a></li>
+              <li><a class="dropdown-item" href="TodosProductos.html">Todos mis productos</a></li>
+              <li><a class="dropdown-item" href="MisOrdenes.html">Mis Ordenes</a></li>
+              <li><a class="dropdown-item" href="Listas.html">Mis Listas</a></li>
+              <li><a class="dropdown-item" href="Chat.html">Chat</a></li>
+              
+              <li><a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
+                Cerrar sesión</a>
+              </li>
+              
+              
+            </ul>
+             
+          </li>
+             
+            
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <body>
+      <div class="container">
+        <p></p>
+        <h1>Carrito</h1>
+        <hr>
+        <table class="table">
+            <thead>
+              <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+              </tr>
+              
+            </tfoot>
+            
+            </table>
+
+            
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              
+              <a href="PAGAR.html"><button class="btn btn-info  text-white " id="pagar-carrito" type="button">Pagar</button></a>
+            </div><p></p>
+          <div class="row" id="cards"></div>
+          
+          
+        </div>
+      
+        <template id="template-footer">
+              <th scope="row" colspan="2">Total productos</th>
+              <td>10</td>
+              <td>
+                  <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                      vaciar todo
+                  </button>
+              </td>
+              <td class="font-weight-bold">$ <span></span></td>
+          </template>
+          
+          <template id="template-carrito">
+            <tr>
+              <th scope="row">id</th>
+              <td>Café</td>
+              <td>1</td>
+              <td>
+                  <button class="btn btn-info btn-sm">
+                      +
+                  </button>
+                  <button class="btn btn-danger btn-sm">
+                      -
+                  </button>
+              </td>
+              <td>$ <span>500</span></td>
+            </tr>
+          </template>
+      
+    
+
+
+
+        <template id="template-card">
+          <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+              <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+            </div>
+          </div>
+          </template>
+        
+          
+      <script src="../js/app.js"></script>
+      </body>
+        
+    </main>
+
+    
+
+
+
+</span>
+
+
+
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Conocenos</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Metodos de Pago</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Contactanos</h2>
+            <p class="footer__txt">Email:</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">¿Necesitas Ayuda?</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Subscribete</h2>
+            <p class="footer__txt">Registrate para recibir las ultimas ofertas 
+                en tu correo electronico y comprar productos.</p>
+                <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        
+    </footer>
+    <div class="Copyright"><p class="copy">© 2022, Echo</p></div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</html>
