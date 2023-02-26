@@ -29,27 +29,52 @@
 
  }
 
- img {
-     display: block;
-     width: 100%;
+ .Pagina{
+    
+    text-decoration:none;
+    
  }
 
- .main-header__title {
-     text-align: center;
-     font-size: 2.5em;
-     margin: 15px 0;
-     color: #ffffff;
-     font-family: "GameCube";
-     text-shadow:
-		0 0 5px rgb(255, 0, 234),
-		0 0 10px rgb(255, 0, 179),
-		0 0 20px rgb(28, 187, 255),
-		0 0 40px rgb(18, 192, 255),
-		0 0 80px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255);
+.Titulo
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size:30px;
+    font-weight: bold;
+
+   
+}
+
+
+
+.Titulo:hover{
+    color: #f57600;
+    text-decoration: none;
+    
+}
+  
+.Navegador
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size:215x;
+    font-weight: bold;
+
+   
+}
+
+
+
+.Navegador:hover{
+    color: #f57600;
+    text-decoration: none;
+    
+}
+
+
+img {
+     display: block;
+     width: 100%;
  }
 
 
@@ -896,48 +921,9 @@ padding: 20px;
 
 /* CSS Document */
 
-  
-a {
-    color:#0000FF;
-    text-decoration:none; }
-  
-    a:hover { text-decoration:underline; }
-  
-#wrapper, #loginform {
-    margin:0 auto;
-    padding-bottom:25px;
-    background:#EBF4FB;
-    width:504px;
-    border:1px solid #ACD8F0; }
-  
-#loginform { padding-top:18px; }
-  
-    #loginform p { margin: 5px; }
-  
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto; }
-  
-#usermsg {
-    width:395px;
-    border:1px solid #ACD8F0; }
-  
-#submit { width: 60px; }
-  
-.error { color: #ff0000; }
-  
-#menu { padding:12.5px 25px 12.5px 25px; }
-  
-.welcome { float:left; }
-  
-.logout { float:right; }
-  
-.msgln { margin:0 0 2px 0; }
+.degradado {
+    background-image: linear-gradient(to left,rgb(248, 73, 239),orange);
+    height: 100vh;
+  }
+
 
