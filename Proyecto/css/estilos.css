@@ -357,77 +357,42 @@ padding: 20px;
 
  /*Registro*/
  .register-box {
-    border: 1px solid rgb(0, 0, 0);
+  color: #000000;
     width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-top: 7%;
     margin-bottom: 4%;
-    background: #07070773;
-    padding: 80px 50px;
 }
 
-.register-title {
+
+
+.boton_Registro{
+    background-color: #ff0000; 
+    border: none;
     color: white;
-    margin-bottom: 5%;
-    font-family: "GameCube";
-     text-shadow:
-		0 0 5px rgb(255, 0, 234),
-		0 0 10px rgb(255, 0, 179),
-		0 0 20px rgb(28, 187, 255),
-		0 0 40px rgb(18, 192, 255),
-		0 0 80px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255);
-}
-
-.btn-login{
-
-    margin-top: 5%;
-    border: 0; 
-    width: 150px; 
-    height: 30px;
-    font-size: 18px; 
-    color: white; 
-    border-radius: 25px; 
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); 
-}
-.main-registrar{
-    background: url("../img/img15.jpg") center; 
-    background-size: 100% auto;
-    background-repeat: repeat;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 
 
  /*Inicio de sesion*/
 .inicio-box {
-    border: 1px solid rgb(0, 0, 0);
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50%;
-    background: #07070773;
-    padding: 130px 50px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
-.inicio-title {
-    color: white;
-    margin-bottom: 5%;
-    font-family: "GameCube";
-     text-shadow:
-		0 0 5px rgb(255, 0, 234),
-		0 0 10px rgb(255, 0, 179),
-		0 0 20px rgb(28, 187, 255),
-		0 0 40px rgb(18, 192, 255),
-		0 0 80px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255),
-		0 0 90px rgb(0, 187, 255);
-}
+
 
 .btn-login{
 
@@ -657,19 +622,7 @@ padding: 20px;
     font-size: medium;
  }
 
- #form {
-    width: 250px;
-    margin: 0 auto;
-    height: 50px;
-  }
-  
-  #form p {
-    text-align: left;
-  }
-  
-  #form label {
-    font-size: 20px;
-  }
+
   
   input[type="radio"] {
     display: none;
@@ -876,3 +829,26 @@ padding: 20px;
 
  }
 
+ .boton4 {
+    background-color: #ff0000; 
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .boton4:hover {
+    text-decoration: none;
+    background-color: #d40505; 
+    color: #ffffff;
+}
+
+.espacio_Boton{
+    padding: 10px 30px;
+}
