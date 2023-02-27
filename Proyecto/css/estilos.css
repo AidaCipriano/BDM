@@ -916,3 +916,227 @@ padding: 20px;
     padding: 3rem;
   }
  
+  
+  .Main_Body{
+  
+     padding-right: 2rem;
+     padding-left: 2rem;
+     background-color: #ffffff;
+   }
+
+   .Main_Contenido{
+   
+    padding-top: 1rem;
+     padding-right: 5rem;
+     padding-left: 10rem;
+     padding-bottom: 1rem;
+   }
+
+   .Main_Contenido2{
+   
+    padding-top: 2rem;
+     padding-right: 5rem;
+     padding-left: 10rem;
+     padding-bottom: 2rem;
+   }
+
+   .Main_Subcontenido{
+ 
+
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 
+    inset 0 -3em 3em rgb(255, 255, 255),
+    0 0  0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    display: flex;
+   }
+
+    .Main_Sub_Subcontenido{
+       
+    
+        padding-top: 1rem;
+        padding-right: 5rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+       
+    }
+
+    .Main_Sub_Subcontenido2{
+    
+        position: absolute;
+        right:250px;
+        top: 420px;
+
+
+    }
+
+    .Main_Sub_Sub_Subcontenido{
+      
+    
+        padding-top: 2rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .Comenzar {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .progress {
+        
+        height: 35px;
+        width: 100%;
+        border: 1px solid #428bca;
+        border-radius: 5px;
+        background-color: #e6f3fa;
+        margin-bottom: 15px;
+        padding: 5px 400px;
+    }
+     
+    .progress-bar {
+       
+        height: 100%;
+        background: #428bca;
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+     
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
+    }
+
+    .Main_Subcontenido_Titulo{
+      
+    
+        padding-top: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+  
+    }
+
+    .Main_Subcontenido_Texto{
+       
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+  
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+
+        
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+         
+        background-color: #fefefe;
+        margin: 20% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .Boton_Modal{
+        background-color: transparent; 
+        border: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .Boton_Modal:hover{
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+
+      .video{
+      
+        text-align: left;
+        padding-left: 1rem;
+      }
+
+      .Boton_Completado{
+        background-color:#029ad6; 
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 20px 20px;
+        text-align: left;
+        text-decoration: none;
+        font-size:20px;
+        cursor: pointer;
+        
+
+      }
+
+      .Boton_Completado:hover{
+        background-color: #038ac0;
+        color: white;
+      }
+
+.CajaBotones{
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.SubCajaBotones{
+   /* border: 2px solid blue;*/
+}
+
+.SubCajaBotones3{
+   
+    padding-right: 35rem;
+    padding-left: 30rem;
+}
+        
+.SubCajaBotones2{
+    /*border: 2px solid blue;*/
+
+}
