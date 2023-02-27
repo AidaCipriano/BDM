@@ -1,0 +1,26 @@
+GET http://localhost/phpmyadmin/index.php?route=/table/structure&db=usuarios&table=usuarios
+
+###
+POST http://localhost/phpmyadmin/index.php?route=/table/structure&db=usuarios&table=usuarios
+
+###
+PUT http://localhost/phpmyadmin/index.php?route=/table/structure&db=usuarios&table=usuarios
+
+ {
+    "ID_Usuario": 1,
+    "Nombre": "Ricardo Cardona",
+    "Usuario": "Richardo",
+    "Contraseña":  "Ricardo1?",
+    "Correo": "ricardo@gmail.com"
+}
+
+### 
+DELETE http://localhost/phpmyadmin/index.php?route=/table/structure&db=usuarios&table=usuarios
+
+{
+    "ID_Usuario": 1,
+    "Nombre": "Ricardo Cardona",
+    "Usuario": "Richardo",
+    "Contraseña":  "Ricardo1?",
+    "Correo": "ricardo@gmail.com"
+}

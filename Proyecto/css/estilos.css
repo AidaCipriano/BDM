@@ -1,0 +1,1142 @@
+ @font-face {
+    font-family: "Inconsolata";
+    src: url(../fuente/Inconsolata-VariableFont_wdth\,wght.ttf);
+ }
+
+ @font-face {
+    font-family: "GameCube";
+    src: url(../fuente/GameCube.ttf);
+ }
+
+ @font-face {
+    font-family: "Halo";
+    src: url(../fuente/Halo.ttf);
+ }
+
+ @font-face {
+    font-family: "Retro";
+    src: url(../fuente/Retro\ Gaming.ttf);
+ }
+
+
+
+ 
+ .Pagina{
+    
+    text-decoration:none;
+    
+ }
+
+.Titulo
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size:30px;
+    font-weight: bold;
+
+   
+}
+
+
+.Titulo:hover{
+    color: #f57600;
+    text-decoration: none;
+    
+}
+  
+.Navegador
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size:215x;
+    font-weight: bold;
+
+   
+}
+
+
+
+.Navegador:hover{
+    color: #f57600;
+    text-decoration: none;
+    
+}
+
+
+img {
+     display: block;
+     width: 100%;
+ }
+
+
+.main-header{
+    padding: 0 20px;
+    
+}
+
+.main-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__btn{
+   display: block;
+   padding: 10px 20px;
+   color: #454546;
+   border: 1px solid #454546;
+   text-decoration: none;
+}
+.main-header__input{
+   display: block;
+   padding: 10px;
+}
+
+.main{
+    padding: 10px 30px;
+   background-color: #faf6f6;
+}
+
+.main-header__link{
+    color: #333;
+}
+
+
+
+
+
+
+ /* Estilos de productos */
+
+.container-products{
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+padding: 20px;
+
+
+}
+
+ .product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+ }
+
+
+
+ .product__img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+ }
+
+ .product__title{
+    text-align: center;
+ }
+
+ .product__price{
+    color: #FF4E00;
+    font-weight: bold;
+ }
+
+ .product__icon{
+    display: block;
+    margin: 10px 0;
+ }
+
+ .product__icon:hover{
+    color: #FF4E00;
+ }
+
+ /*Pie de pagina*/
+ .main-footer{
+    background: #151515;
+    color: white;
+    padding: 30px 20px;
+ }
+
+ .footer__txt{
+    color: #555;
+ }
+
+ .footer__title{
+    border-bottom: 1px solid #555;
+    padding: 20px;
+ }
+
+ .footer__link{
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+ }
+
+ .footer__input{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1 px solid #555;
+ }
+
+ .copy{
+    color: #555;
+ }
+
+ .Copyright{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1 px solid #555;
+    text-align: center;
+ }
+
+ /*Estilos para tablet*/
+ @media screen and (min-width: 768px){
+    .slider{
+        height: 400px;
+    }
+    .editor__item{
+        height: 250px;
+    }
+ }
+
+ /*Estilos para web*/
+ @media screen and (min-width: 1024px){
+    .container{
+        width: 1000px;
+        margin: auto;
+    }
+    
+    .icon-menu{
+        display: none;
+    }
+
+    .main-header .container--flex{
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header__container{
+        padding-top: 20px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .main-header__txt{
+        width: 100%;
+    }
+
+    .main-header__container:nth-child(2){
+        order: -1;
+        width: 20%;
+    }
+    .main-header__container:nth-child(3){
+        width: 20%;
+        padding: 0 20px;
+    }
+
+    .main-header__title{
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .main-header__link{
+        margin-bottom: 20px;
+    }
+
+    .main-header__btn{
+        width: 130px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-header__input{
+        width: 85%;
+    }
+
+    .main-nav{
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu{
+        position: static;
+        width: 100%;
+        display: flex;
+        background: none;
+    }
+
+    .menu__link{
+        color: #333;
+    }
+
+    .menu__link:hover{
+        background: #333;
+        color: white;
+    }
+
+    .container-products{
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 15px;
+    }
+
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+ }
+
+ @media screen and (min-width:1280px){
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
+    .main-header__container:nth-child(3){
+        padding-left: 60px;
+    }
+    .main-header__container:nth-child(2){
+        font-size: 1.3em;
+    }
+    .slider{
+        height: 500px;
+    }
+ }
+
+ @media screen and (min-width:1600px){
+    .container{
+        width: 1500px;
+        margin: auto;
+    }
+    .main-header__container:nth-child(3){
+        padding-left: 150px;
+    }
+    .main-header__container:nth-child(2){
+        font-size: 1.5em;
+    }
+    .slider{
+        height: 600px;
+    }
+ }
+
+ /*Registrate*/
+ .btn-registrate{
+    height: 50px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: #c300ff;
+            margin-top: 0px;
+            color: white;
+    text-align: center;
+    font-family: "Inconsolata";
+    font-size: medium;
+ }
+
+ .container-registrate{
+    text-align: center;
+ }
+
+.second-title{
+    text-align: center;
+}
+
+ .container-inicio{
+    text-align: center;
+    padding-bottom: 50px;
+ }
+
+ /*Registro*/
+ .register-box {
+  color: #000000;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+
+
+.boton_Registro{
+    background-color: #ff0000; 
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+ /*Inicio de sesion*/
+.inicio-box {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+
+
+.btn-login{
+
+    margin-top: 5%;
+    border: 0; 
+    width: 150px; 
+    height: 30px;
+    font-size: 18px; 
+    color: white; 
+    border-radius: 25px; 
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); 
+}
+
+.input-user{
+    margin-bottom: 1%;
+}
+
+.user{
+    color: white;
+}
+
+.password{
+    color: white;
+}
+.main-inicio{
+    background: url("../img/img15.jpg") center; 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+/*Perfil*/
+
+.seccion-perfil-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-usuario-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#B873FF, transparent);
+    margin-bottom: 1.25rem;
+}
+
+ .perfil-usuario-portada {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 17rem;
+    background-image: linear-gradient(45deg, #BC3CFF, #317FFF);
+    border-radius: 0 0 20px 20px;
+
+}
+
+.boton-portada {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton-portada i {
+    margin-right: 1rem;
+}
+
+.perfil-usuario-avatar {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #FFFFFF;
+    background-color: #DFE5F2;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+ .perfil-usuario-avatar img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.boton-avatar {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.perfil-usuario-body {
+    width: 70%;
+    position: relative;
+    max-width: 750px;
+}
+
+ .titulo {
+    display: block;
+    width: 100%;
+    font-size: 1.75em;
+    margin-bottom: 0.5rem;
+}
+
+.texto {
+    color: #848484;
+    font-size: 0.95em;
+}
+
+.perfil-usuario-footer,
+.perfil-usuario-bio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.perfil-usuario-bio {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.lista-datos {
+    width: 50%;
+    list-style: none;
+}
+
+.lista-datos li {
+    padding: 5px 0;
+}
+.lista-datos li>.icono {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/*Mi carrito*/
+.cart{
+    text-align: center;
+}
+.imagen{
+    width: 50%;
+    margin-left: 25%;
+}
+
+/*Tienda*/
+
+/*Pregunta*/
+
+
+.pregunta-box {
+    border: 1px solid rgb(0, 0, 0);
+
+    text-align: center;
+
+    background: #07070773;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 12%;
+  margin-bottom: 10%;
+    padding: 5%;
+}
+
+.pregunta-registro {
+    color: white;
+    margin-bottom: 2%;
+    font-family: "Retro";
+     text-shadow:
+		0 0 5px rgb(255, 0, 234),
+		0 0 10px rgb(255, 0, 179),
+		0 0 20px rgb(28, 187, 255),
+		0 0 40px rgb(18, 192, 255),
+		0 0 80px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255);
+}
+
+.pregunta-login {
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: "Retro";
+     text-shadow:
+		0 0 5px rgb(255, 0, 234),
+		0 0 10px rgb(255, 0, 179),
+		0 0 20px rgb(28, 187, 255),
+		0 0 40px rgb(18, 192, 255),
+		0 0 80px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255),
+		0 0 90px rgb(0, 187, 255);
+}
+
+.btn-sesion{
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #5dc1f0;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-family: "Inconsolata";
+    font-size: medium;
+ }
+
+
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  .imground { 
+    width : 20%;
+    height: 40%; 
+   }
+
+   .img-container {
+    
+    text-align: center;
+    display: block;
+  }
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+
+.degradado {
+    background-image: linear-gradient(to left,rgb(248, 73, 239),orange);
+    height: 70vh;
+    
+    
+  }
+
+ .Bievenida{
+   
+    padding: 5rem;  
+    padding-left: 5rem;
+    padding-top: 12rem;
+    padding-block-end: 15rem;
+    width: 50rem;
+    font-family:sans-serif;
+    color: #FFFFFF;
+ }
+
+ .Bievenida_Titulo{
+    font-size: 50px;
+    font-weight: bold;
+ }
+
+ .boton1 {
+   
+   padding: 15px 20px;
+   color: #ffffff;
+   font-weight: bold;
+
+   border: 1px solid #ffffff;
+   text-decoration: none;
+}
+
+.boton1:hover {
+    text-decoration: none;
+    background-color: #e7915f; 
+    border:  #e7915f; ;
+    color: #ffffff;
+}
+
+.boton2 {
+   
+    padding: 15px 20px;
+    color: #ff0000;
+    font-weight: bold;
+
+    background-color: #ffffff;
+    text-decoration: none;
+ }
+ 
+ .boton2:hover {
+     text-decoration: none;
+     background-color: #f7e1e1;
+     color: #ff0000;
+ }
+
+ .SubTitulos{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:sans-serif;
+    padding: 15px 20px;
+
+ }
+ .boton3 {
+    background-color: #00b7ff; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+ 
+ .boton3:hover {
+    text-decoration: none;
+    background-color: #029ad6; 
+    color: #ffffff;
+}
+
+.pie-carta{
+    
+    font-weight: bold;
+    padding: 5px 20px;
+    width:max-content;
+    font-family:sans-serif;
+    color: #FFFFFF;
+}
+
+.Cartas_Titulos{
+
+    font-weight: bold;
+    font-size: 20px;
+    font-family:sans-serif;
+    padding: 1px 10px;
+    color: #151515;
+
+ }
+
+ .Cartas_Intructor{
+
+    font-size: 12px;
+    font-family:sans-serif;
+    padding: 1px 10px;
+    color: #000000;
+ }
+
+ .Cartas_Textos{
+
+    font-size: 15px;
+    font-family:sans-serif;
+    padding: 1px 10px;
+    color: rgb(88, 88, 88);
+
+ }
+
+ .boton4 {
+    background-color: #ff0000; 
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ 
+ .boton4:hover {
+    text-decoration: none;
+    background-color: #d40505; 
+    color: #ffffff;
+}
+
+.espacio_Boton{
+    padding: 10px 30px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #272525;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {color: red;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    color: #d40505;
+    background-color: transparent;
+  }
+ 
+  .CrearLista_CajaImagen{
+    padding: 3rem;
+  }
+
+  .CrearLista_Imagen{
+   /* border: 2px solid blue;*/
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .CrearLista_Texto{
+
+    padding: 3rem;
+  }
+ 
+  
+  .Main_Body{
+  
+     padding-right: 2rem;
+     padding-left: 2rem;
+     background-color: #ffffff;
+   }
+
+   .Main_Contenido{
+   
+    padding-top: 1rem;
+     padding-right: 5rem;
+     padding-left: 10rem;
+     padding-bottom: 1rem;
+   }
+
+   .Main_Contenido2{
+   
+    padding-top: 2rem;
+     padding-right: 5rem;
+     padding-left: 10rem;
+     padding-bottom: 2rem;
+   }
+
+   .Main_Subcontenido{
+ 
+
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 
+    inset 0 -3em 3em rgb(255, 255, 255),
+    0 0  0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    display: flex;
+   }
+
+    .Main_Sub_Subcontenido{
+       
+    
+        padding-top: 1rem;
+        padding-right: 5rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+       
+    }
+
+    .Main_Sub_Subcontenido2{
+    
+        position: absolute;
+        right:250px;
+        top: 420px;
+
+
+    }
+
+    .Main_Sub_Sub_Subcontenido{
+      
+    
+        padding-top: 2rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .Comenzar {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .progress {
+        
+        height: 35px;
+        width: 100%;
+        border: 1px solid #428bca;
+        border-radius: 5px;
+        background-color: #e6f3fa;
+        margin-bottom: 15px;
+        padding: 5px 400px;
+    }
+     
+    .progress-bar {
+       
+        height: 100%;
+        background: #428bca;
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+     
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
+    }
+
+    .Main_Subcontenido_Titulo{
+      
+    
+        padding-top: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+  
+    }
+
+    .Main_Subcontenido_Texto{
+       
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+  
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+
+        
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+         
+        background-color: #fefefe;
+        margin: 20% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .Boton_Modal{
+        background-color: transparent; 
+        border: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .Boton_Modal:hover{
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+
+      .video{
+      
+        text-align: left;
+        padding-left: 1rem;
+      }
+
+      .Boton_Completado{
+        background-color:#029ad6; 
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 20px 20px;
+        text-align: left;
+        text-decoration: none;
+        font-size:20px;
+        cursor: pointer;
+        
+
+      }
+
+      .Boton_Completado:hover{
+        background-color: #038ac0;
+        color: white;
+      }
+
+.CajaBotones{
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.SubCajaBotones{
+   /* border: 2px solid blue;*/
+}
+
+.SubCajaBotones3{
+   
+    padding-right: 35rem;
+    padding-left: 30rem;
+}
+        
+.SubCajaBotones2{
+    /*border: 2px solid blue;*/
+
+}

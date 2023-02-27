@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tienda Online</title>
+        <meta name="viewport" content="width=devide-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="icon" type="image/png" href="../img/logo.JPG">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/signin.css" rel="stylesheet">
+
+    </head>   
+    
+    <body>
+        <header class="p-2 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+           
+                    <li><a href="1index.html" class="Titulo nav-ink">AETNA</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="tienda.html" class="nav-link px-2 text-white">Cursos</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5" role="search">
+                  <input type="search" class="form-control " placeholder="Buscar ..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                    <a href="iniciosesion.html" class="Navegador">Entra</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a type="button" href="registro.html" class="btn btn-outline-light me-2">  Registrate </a>
+                </div>
+              </div>
+            </div>
+          </header>
+   
+        <main class="main-registrar modal position-static d-block" >
+        <div class="form-signin w-100 m-auto">
+            <form action="" method="post" id="form" class="form-register" >
+                <div class="register-box" id="register-box">
+                <h2 class="">Registro</h2>
+          
+                <div class="formulario">
+                
+                <div class="form-floating">
+                    <input type="name" class="form-control"  placeholder="Ingrese su nombre" placeholder="Ingrese su nombre completo" name="name"
+                    required> 
+                    <label for="floatingInput">Nombre Completo</label>
+                </div>
+                <div class="form-floating"> 
+                    <input type="input-email" class="form-control"  placeholder="Ingrese su email" name="email" 
+                    pattern="^[a-z0-9!#$%'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+                    required> 
+                    <label for="floatingInput">Email</label>
+                </div>
+
+                <div class="form-floating"> 
+                    <input type="input-user" class="form-control"  placeholder="Ingrese su nombre de usuario" name="username" required> 
+                    <label for="floatingInput">Usuario</label>
+                </div>
+
+                <div class="form-floating"> 
+                    <input type="password" class="form-control"  placeholder="Ingrese su contaseña" name="password"
+                    pattern="^(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[0-9]){1})(?=(?:.*[?¿.,:;-]){1})\S{8,}"
+                    minlength="8" required>
+                    <label for="floatingInput">Contraseña</label>
+
+                </div>
+                
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"  type="sexo" name="sexo" id="sexo" >
+                      <option selected>Elija una opcion</option>
+                      <option value="1">Femenino</option>
+                      <option value="2">Masculino</option>
+                      <option value="3">No especificar</option>
+                    </select>
+                    <label for="floatingSelect">Sexo</label>
+                </div>
+
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"  type="rol" name="rol" id="rol" >
+                      <option selected>Elija una opcion</option>
+                      <option value="1">Público (Compra y/o Venta)</option>
+                      <option value="2">Privado (Compra) </option>
+                    </select>
+                    <label for="floatingSelect">Usuario...</label>
+                </div>
+
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"  type="rol" name="rol" id="rol" >
+                      <option selected>Elija una opcion</option>
+                      <option value="1">Instructor</option>
+                      <option value="2">Estudiante</option>
+                    </select>
+                    <label for="floatingSelect">Rol de usuario</label>
+                </div>
+                <div class="item"> 
+                    <label class="nav-link px-2 " >Fecha de nacimiento</label>
+                    <input type="date" class="form-control" name="nacimiento" required> 
+                </div>
+
+                <div class="item"> 
+                    <label class="nav-link px-2">Elija una imagen como avatar </label>
+                        <input type="file" class="form-control" id="customFile" name="avatar" required> 
+                </div>
+
+                <div class="item"> 
+                    <label class="nav-link px-2" >Fecha de ingreso </label>
+                    <input type="date" class="form-control" name="ingreso"
+                    required> 
+                </div>
+
+                <div class="espacio_Boton">
+                <button class="boton_Registro" type="submit"  value="Enviar">Registrate</button>
+
+                </div>
+
+        
+            </div>
+        </form>
+        </div>
+        
+        
+    </main>
+    <script src="../js/menu.js"></script>
+      </body>
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Conocenos</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Metodos de Pago</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Contactanos</h2>
+            <p class="footer__txt">Email:</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">¿Necesitas Ayuda?</h2>
+            <p class="footer__txt">blah blah </p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Subscribete</h2>
+            <p class="footer__txt">Registrate para recibir las ultimas ofertas 
+                en tu correo electronico y comprar productos.</p>
+                <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        
+    </footer>
+    <div class="Copyright"><p class="copy">© 2022, Echo</p></div>
+
+</html>
