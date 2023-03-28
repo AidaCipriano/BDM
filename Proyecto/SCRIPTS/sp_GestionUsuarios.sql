@@ -1,0 +1,106 @@
+
+  USE BD_BDM;
+DROP procedure IF EXISTS sp_CreacionUsuarios;
+
+
+ DELIMITER $$
+ CREATE PROCEDURE sp_CreacionUsuarios(
+    pNOMBRES				varchar(50)	,
+    pAPELLIDOS				VARCHAR(50)		,
+	pRol					varchar(20),
+	pGENERO					VARCHAR(10)		,
+	pFECHA_NACIMIENTO		date,
+	pEMAIL					VARCHAR(50)		,
+	pCONTRASENA				VARCHAR(20)		,
+    pIMAGEN					mediumblob		
+	)
+BEGIN
+declare codigo tinyint;
+	DECLARE pID_USUARIO tinyint;
+
+
+		if (pRol='Instructor')
+		then     
+		INSERT INTO USUARIO (NOMBRES, APELLIDOS, GENERO, FECHA_NACIMIENTO, EMAIL, CONTRASENA, FECHA_REGISTRO, ULTIMA_MODIFICACION, IMAGEN)
+
+		VALUES (pNOMBRES, pAPELLIDOS, pGENERO, pFECHA_NACIMIENTO, pEMAIL, pCONTRASENA, (SELECT DATE(NOW())), (SELECT DATE(NOW())), pIMAGEN);
+		
+		set pID_USUARIO = (select MAX(ID_USUARIO) from USUARIO);
+		
+		INSERT INTO INSTRUCTOR (USUARIO) VALUES (pID_USUARIO);
+
+		end if;
+		if (pRol='Estudiante')
+		then     
+		INSERT INTO USUARIO (NOMBRES, APELLIDOS, GENERO, FECHA_NACIMIENTO, EMAIL, CONTRASENA, FECHA_REGISTRO, ULTIMA_MODIFICACION, IMAGEN)
+
+		VALUES (pNOMBRES, pAPELLIDOS, pGENERO, pFECHA_NACIMIENTO, pEMAIL, pCONTRASENA, (SELECT DATE(NOW())), (SELECT DATE(NOW())), pIMAGEN);
+		
+		set pID_USUARIO = (select MAX(ID_USUARIO) from USUARIO);
+		
+		INSERT INTO ESTUDIANTE (USUARIO) VALUES (pID_USUARIO);
+
+		end if;
+END$$
+ 
+ DROP procedure IF EXISTS sp_ActualizarUsuarios;
+
+ DELIMITER $$
+ CREATE PROCEDURE sp_ActualizarUsuarios(
+    pID_USUARIO				tinyint,
+    pNOMBRES				varchar(50)		,
+    pAPELLIDOS				VARCHAR(50)		,
+	pGENERO					VARCHAR(10)		,
+	pFECHA_NACIMIENTO		date			,
+	pEMAIL					VARCHAR(50)		,
+	pCONTRASENA				VARCHAR(20)		,
+    pIMAGEN					mediumblob		
+	)
+BEGIN
+		UPDATE USUARIO
+			SET
+				NOMBRES				= 	pNOMBRES,
+				APELLIDOS			= 	pAPELLIDOS,
+				GENERO				= 	pGENERO,
+				FECHA_NACIMIENTO	= 	pFECHA_NACIMIENTO,
+				EMAIL				= 	pEMAIL,
+				CONTRASENA			= 	pCONTRASENA,
+				ULTIMA_MODIFICACION	= 	(SELECT DATE(NOW())),
+				IMAGEN				=	pIMAGEN	
+		WHERE
+			ID_USUARIO 	= pID_USUARIO ;
+
+END$$
+
+DROP procedure IF EXISTS sp_EliminarUsuario;
+
+ DELIMITER $$
+ CREATE PROCEDURE sp_EliminarUsuario(
+    pID_USUARIO				tinyint
+	)
+BEGIN
+	
+
+	DELETE FROM ESTUDIANTE WHERE USUARIO 	= pID_USUARIO ;
+    DELETE FROM INSTRUCTOR WHERE USUARIO 	= pID_USUARIO ;
+	DELETE FROM USUARIO WHERE ID_USUARIO 	= pID_USUARIO ;
+	
+END$$
+
+CALL sp_CreacionUsuarios( 'Juan', 'Apellido', 'Estudiante', 'genero', '2023-02-28' , 'email', 'contrasena',  null);
+ 
+CALL sp_ActualizarUsuarios( 8 , 'Hola 1' ,'Apellido', 'genero', '2023-02-28', 'email', 'contrasena',  null);
+ 
+ CALL sp_EliminarUsuario( 7);
+
+ 
+ select * FROM USUARIO;
+ SELECT * FROM INSTRUCTOR;
+  SELECT * FROM ESTUDIANTE;
+
+ DELETE FROM USUARIO;
+ 
+ DELETE FROM USUARIO
+	WHERE ID_USUARIO='6'
+    
+SELECT DATE(NOW())    

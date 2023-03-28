@@ -722,7 +722,7 @@ padding: 20px;
    
     padding: 5rem;  
     padding-left: 5rem;
-    padding-top: 12rem;
+    padding-top: 7rem;
     padding-block-end: 15rem;
     width: 50rem;
     font-family:sans-serif;
@@ -1127,7 +1127,7 @@ padding: 20px;
 }
 
 .SubCajaBotones{
-   /* border: 2px solid blue;*/
+    border: 0px solid blue;
 }
 
 .SubCajaBotones3{
@@ -1137,6 +1137,6 @@ padding: 20px;
 }
         
 .SubCajaBotones2{
-    /*border: 2px solid blue;*/
+    border: 0px solid blue;
 
 }
